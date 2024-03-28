@@ -4,7 +4,10 @@
      * @author Casper the Ghost
      * @version 1.0.0
      * - add method
-     */ 
+     */
+import { Observable } from "rxjs"
+
+ 
 
 export interface IService<T> {
     /**
@@ -13,4 +16,8 @@ export interface IService<T> {
      * @returns void
      */
     add(item: T): void
+     /**
+     * Returns the whole list of T type
+     */
+    findAll(): Observable<Array<T>>
 }

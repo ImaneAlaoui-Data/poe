@@ -1,0 +1,24 @@
+{
+  "interns": [
+    {
+      "lastname": "Aubert",
+      "firstname": "Jean-Luc",
+      "id": "8932"
+    },
+    {
+      "lastname": "Bond",
+      "firstname": "James",
+      "id": "fb0d"
+    },
+    {
+      "id": "16ef",
+      "lastname": "truc",
+      "firstname": "machin"
+    },
+    {
+      "id": "d14f",
+      "lastname": "Boris",
+      "firstname": "Le bÖgosse"
+    }
+  ]
+}
