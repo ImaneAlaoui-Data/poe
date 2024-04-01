@@ -1,0 +1,36 @@
+<form [formGroup]="internForm" (ngSubmit)="onSubmit()">
+    <legend>Ajouter une POE</legend>
+
+    <fieldset>
+
+        <div class="form-field">
+
+            <input type="text" formControlName="intitule" placeholder="Intitulé POE">
+            <div *ngIf="internForm.controls['intitule'].errors && internForm.controls['intitule'].touched">
+                <span *ngIf="internForm.controls['intitule'].hasError('required')">
+                Le nom ne peut pas être vide
+                </span>
+
+                <span *ngIf="internForm.controls['duration'].hasError('minlenght')">
+                    Le nom ne peut être vide
+                    </span>
+            </div>
+
+        </div>
+
+        <div class="form-field">
+            <input type="text" formControlName="duration" placeholder="Durée POE en heure">
+            <div class="error" *ngIf="internForm.controls['duration'].hasError('required') && internForm.controls['duration'].touched">
+                La durée doit être supérieure à 1 heure
+
+            </div>
+        </div>
+
+    </fieldset>
+
+    <div class="=form-field">
+        <button [disabled]="internForm.invalid" type="submit">Ajouter</button>
+    </div>
+</form>
+
+{{ internForm.value | json }}

@@ -20,5 +20,11 @@
       "lastname": "Boris",
       "firstname": "Le bÖgosse"
     }
+  ],
+  "poes":[
+    {
+      "poeTitle": "Dev Cyber",
+      "duration": 399
+    }
   ]
 }

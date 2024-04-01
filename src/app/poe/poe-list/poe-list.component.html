@@ -1,0 +1,20 @@
+<h1>Liste des POE</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>title</th>
+      <th>duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let poe of poes">
+      <td>{{ poe.title }}</td>
+      <td>{{ poe.duration }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<a [routerLink]="['/poe-add']">
+    Ajouter une POE
+</a>
