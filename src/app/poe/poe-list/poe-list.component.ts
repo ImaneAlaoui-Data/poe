@@ -26,7 +26,6 @@ export class PoeListComponent {
     )
     .subscribe((poes: PoeType[]) => {
       this.poes = poes
-      
     })
   }
 
