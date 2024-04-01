@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { PoeModule } from './poe/poe.module';
 import { PoeService } from './poe/services/poe.service';
+import { PoeFormComponent } from './poe-form/poe-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    PoeFormComponent,
   ],
   imports: [
     BrowserModule,

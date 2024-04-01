@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PoeService } from './services/poe.service';
+import { PoeService } from '../services/poe.service';
 import { take } from 'rxjs';
 import { PoeType } from '../types/poe.type';
 

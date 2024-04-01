@@ -80,6 +80,10 @@ export class InternService implements IService<Intern>
   ) { }
 
   add(item: Intern): Observable<Intern> {
+    var prenom = item.firstname
+    prenom = prenom.toUpperCase()
+    console.log("affichageboite",prenom)
+    console.log('affichage boite', prenom + ' - developpement informatique')
     return this._httpClient.post<Intern>(
       'http://localhost:3000/interns',
       item

@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { InternFormComponent } from './home/intern-form/intern-form.component';
 import { FormGroup } from '@angular/forms';
 import { PoeListComponent } from './poe/poe-list/poe-list.component';
+import { PoeFormComponent } from './poe-form/poe-form.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,11 @@ const routes: Routes = [
   {
     path: 'poe-list',
     component: PoeListComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'poe-add',
+    component: PoeFormComponent,
     pathMatch: 'full'
   },
   {
